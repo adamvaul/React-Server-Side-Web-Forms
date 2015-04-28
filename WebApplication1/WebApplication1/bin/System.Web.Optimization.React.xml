@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.Optimization.React</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Optimization.React.JsxBundle">
+            <summary>
+            Represents a bundle that compiles JSX to JavaScript before minifying.
+            </summary>
+        </member>
+        <member name="M:System.Web.Optimization.React.JsxBundle.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Web.Optimization.React.JsxBundle"/> class.
+            </summary>
+            <param name="virtualPath">
+            The virtual path used to reference the <see cref="T:System.Web.Optimization.Bundle"/>
+            from within a view or Web page.
+            </param>
+        </member>
+        <member name="M:System.Web.Optimization.React.JsxBundle.ApplyTransforms(System.Web.Optimization.BundleContext,System.String,System.Collections.Generic.IEnumerable{System.Web.Optimization.BundleFile})">
+            <summary>
+            Applies the transformations.
+            </summary>
+            <returns>The bundle response.</returns>
+        </member>
+        <member name="M:System.Web.Optimization.React.JsxBundle.GetTransforms">
+            <summary>
+            Gets the transformations that should be used by the bundle.
+            </summary>
+            <returns>The transformations</returns>
+        </member>
+        <member name="T:System.Web.Optimization.React.JsxTransform">
+            <summary>
+            Transforms JSX into regular JavaScript. Should be included before any minification 
+            transformations.
+            </summary>
+        </member>
+        <member name="M:System.Web.Optimization.React.JsxTransform.Process(System.Web.Optimization.BundleContext,System.Web.Optimization.BundleResponse)">
+            <summary>
+            Transforms the content in the <see cref="T:System.Web.Optimization.BundleResponse" /> object.
+            </summary>
+            <param name="context">The bundle context.</param>
+            <param name="response">The bundle response.</param>
+        </member>
+    </members>
+</doc>
